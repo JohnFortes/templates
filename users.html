@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Template | Cadastro de Usuários</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/templates/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/templates/dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <!-- Site wrapper -->
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="/templates/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Contato</a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+
+        <!-- Messages Dropdown Menu -->
+
+        <!-- Notifications Dropdown Menu -->
+
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+            <i class="fas fa-th-large"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="/templates/" class="brand-link">
+        <img src="/templates/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">AdminLTE 3</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="/templates/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Alexander Pierce</a>
+          </div>
+        </div>
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Páginas iniciais
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Página ativa</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Página inativa</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Link simples
+                  <span class="right badge badge-danger">novo</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/templates/login.html" class="nav-link">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Login
+                  <!-- <span class="right badge badge-danger">novo</span> -->
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/templates/users.html" class="nav-link">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Cadastro usuários
+                  <!-- <span class="right badge badge-danger">novo</span> -->
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>Usuários</h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="/templates/">Home</a></li>
+                <li class="breadcrumb-item active">Usuários</li>
+              </ol>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+
+        <!-- Default box -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Usuários Cadastrados</h3>
+            <div class="box-header float-right">
+              <a href="/templates/create.html" class="btn btn-success">Cadastrar Usuário</a>
+            </div>
+          </div>
+
+
+          <div class="card-body">
+            <table id="example1" class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th style="width: 10px">ID</th>
+                  <th>Nome</th>
+                  <th>Login</th>
+                  <th>Status</th>
+                  <th style="width: 180px">&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td>2764</td>
+                  <td></td>
+                  <td></td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/2764" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2764/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2771</td>
+                  <td></td>
+                  <td></td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/2771" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2771/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2766</td>
+                  <td></td>
+                  <td></td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/2766" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2766/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2770</td>
+                  <td></td>
+                  <td></td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/2770" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2770/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2765</td>
+                  <td></td>
+                  <td></td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/2765" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2765/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2769</td>
+                  <td></td>
+                  <td></td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/2769" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2769/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1414</td>
+                  <td>0</td>
+                  <td>micaelfilial</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/1414" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1414/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>68</td>
+                  <td>0</td>
+                  <td>jose</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/68" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/68/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2582</td>
+                  <td>1</td>
+                  <td>micaelfilial2</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/2582" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2582/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>270</td>
+                  <td>123456789</td>
+                  <td>lizane</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/270" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/270/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>437</td>
+                  <td>ADAIL GONÇALVES DA COSTA</td>
+                  <td>adailro</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/437" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/437/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1194</td>
+                  <td>Adalberto Alves Barbosa</td>
+                  <td>adalbertord</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/1194" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1194/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>149</td>
+                  <td>adelino antonio lanser</td>
+                  <td>lansertransmoto</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/149" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/149/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>908</td>
+                  <td>ADELITA MARIANI</td>
+                  <td>adelita</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/908" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/908/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1373</td>
+                  <td>Ademils afonso da Silva</td>
+                  <td>aderiodosul</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/1373" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1373/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1863</td>
+                  <td>Ademilson Afonso</td>
+                  <td>auditoria3@sabanco.com.br</td>
+                  <td>adesanto</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/1863" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1863/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+                
+
+                <tr>
+                  <td>2433</td>
+                  <td>Ademir Goes</td>
+                  <td>ademirsp</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/2433" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2433/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1279</td>
+                  <td>Adilson Borges dos Santos</td>
+                  <td>adilsonborges</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/1279" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1279/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1824</td>
+                  <td>ADILSON DE JESUS HILÁRIO</td>
+                  <td>adilsonodara</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/1824" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1824/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>688</td>
+                  <td>Adilson Galdino dos Santos</td>
+                  <td>adilsonalagoas</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/688" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/688/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1108</td>
+                  <td>Adilson Vendramin</td>
+                  <td>adilson</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/1108" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1108/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1284</td>
+                  <td>Adir Alves dos Santos</td>
+                  <td>adiralves</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/1284" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1284/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2557</td>
+                  <td>ADONIS MANOEL TATAR</td>
+                  <td>adonistatar</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/2557" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2557/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1419</td>
+                  <td>Adriana Antunes</td>
+                  <td>adrianapr</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/1419" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1419/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1473</td>
+                  <td>Adriana Antunes</td>
+                  <td>adrianasc</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/1473" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1473/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>559</td>
+                  <td>ADRIANA ANTUNES</td>
+                  <td>adriana_cd</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/559" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/559/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1132</td>
+                  <td>adriana costa pinto pedroso</td>
+                  <td>adrianawnaltami</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/1132" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1132/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1075</td>
+                  <td>Adriana Rodrigues V Mendes</td>
+                  <td>adrianadma</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/1075" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1075/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1702</td>
+                  <td>Adriana R. Petersen Siqueri.</td>
+                  <td>adriana</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/1702" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1702/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2575</td>
+                  <td>Adriana Silva Oliveira Cruz</td>
+                  <td>adrianabalneari</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/2575" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2575/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>436</td>
+                  <td>ADRIANE</td>
+                  <td>asaridna</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/436" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/436/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>131</td>
+                  <td>ADRIANE</td>
+                  <td>adriane</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/131" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/131/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2025</td>
+                  <td>Adriane Oliveira</td>
+                  <td>adrianeoliveira</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/2025" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2025/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>171</td>
+                  <td>ADRIANO</td>
+                  <td>bodot</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/171" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/171/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>102</td>
+                  <td>ADRIANO</td>
+                  <td>adriano_lda</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/102" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/102/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>61</td>
+                  <td>ADRIANO</td>
+                  <td>adriano</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/61" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/61/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>373</td>
+                  <td>Adriano Bodot</td>
+                  <td>adrianobodotpr</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/373" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/373/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td>2276</td>
+                  <td>ADRIANO BRASIL DE OLIVEIRA</td>
+                  <td>adrianobrn</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/2276" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2276/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2600</td>
+                  <td>Adriano de Andrade Nascimento</td>
+                  <td>adrianoandrade</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/2600" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2600/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1304</td>
+                  <td>Adriano Lima</td>
+                  <td>adrianolima</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/1304" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1304/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>293</td>
+                  <td>ADRIANO VENANCIO</td>
+                  <td>adrianoeps</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/293" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/293/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>276</td>
+                  <td>ADRIANO VENANCIO</td>
+                  <td>adrianovenancio</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/276" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/276/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>74</td>
+                  <td>ADRIANO VENANCIO</td>
+                  <td>venancioctba</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/74" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/74/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>656</td>
+                  <td>Agnaldo Ozias Soares</td>
+                  <td>agnaldocor</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/656" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/656/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2253</td>
+                  <td>AGOSTINHO FERNANDES DOS SANTOS</td>
+                  <td>agostinhosantos</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/2253" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2253/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1057</td>
+                  <td>Aidam Bento</td>
+                  <td>aidanbento</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/1057" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1057/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2723</td>
+                  <td>Ailton Ferreira Cruz</td>
+                  <td>ailtoncruz</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/2723" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2723/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2613</td>
+                  <td>AIRTON DE LUCENA FERREIRA</td>
+                  <td>airtonferreira</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/2613" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2613/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1428</td>
+                  <td>ALANA NASCIMENTO</td>
+                  <td>alana</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/1428" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/1428/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2658</td>
+                  <td>Alanderson Carlos Maximiliano</td>
+                  <td>alanderson</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/2658" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2658/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2346</td>
+                  <td>Alan Jardim</td>
+                  <td>alanwjk</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/2346" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2346/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2135</td>
+                  <td>ALANJONYS MONTEIRO DOS SANTOS</td>
+                  <td>alanjonysbv</td>
+                  <td>Ativo</td>
+                  <td>
+                    <a href="/users/2135" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2135/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2551</td>
+                  <td>ALAN JORGE DE OLIVEIRA SANTOS</td>
+                  <td>alansantos</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/2551" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/2551/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>709</td>
+                  <td>Alan Rafael</td>
+                  <td>alancd</td>
+                  <td>Bloqueado</td>
+                  <td>
+                    <a href="/users/709" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    <a href="/users/709/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
+                      class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <!-- /.card -->
+
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+      <div class="float-right d-none d-sm-block">
+        <b>Version</b> 3.2.0
+      </div>
+      <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="/templates/plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="/templates/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="/templates/dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="/templates/dist/js/demo.js"></script>
+
+  <!-- DataTables  & Plugins -->
+  <script src="/templates/plugins/datatables/jquery.dataTables.js"></script>
+  <script src="/templates/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="/templates/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="/templates/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <script src="/templates/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="/templates/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+  <script src="/templates/plugins/jszip/jszip.min.js"></script>
+  <script src="/templates/plugins/pdfmake/pdfmake.min.js"></script>
+  <script src="/templates/plugins/pdfmake/vfs_fonts.js"></script>
+  <script src="/templates/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+  <script src="/templates/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+  <script src="/templates/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="/templates/dist/js/adminlte.min.js"></script>
+  <!-- Page specific script -->
+  <script>
+    $(function () {
+      $("#example1").DataTable({
+        "language": { "url": '/templates/plugins/i18n/pt-BR.json' },
+        "responsive": true, "lengthChange": true, "autoWidth": false,
+        "dom": 'Bfrtip',
+        "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+      }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+      $('#example2').DataTable({
+        "paging": true,
+        "language": { "url": '/templates/plugins/i18n/pt-BR.json' },
+        "lengthChange": true,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
+      });
+    });
+  </script>
+
+</body>
+
+</html>
