@@ -14,7 +14,7 @@
     if (window.___browserSync___ === undefined && Number(localStorage.getItem('AdminLTE:Demo:MessageShowed')) < Date.now()) {
       localStorage.setItem('AdminLTE:Demo:MessageShowed', (Date.now()) + (15 * 60 * 1000))
       // eslint-disable-next-line no-alert
-      alert('Você está em uma pagina demo, este arquivo é foi criado apenas para fins de teste!')
+      alert('Você está em uma pagina demo, este pagina foi criada apenas para fins de teste!')
     }
   }, 1000)
 
